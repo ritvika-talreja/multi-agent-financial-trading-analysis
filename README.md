@@ -26,6 +26,45 @@ The agents collaborate to fetch market data, analyze trends, formulate strategie
 4. **Task Completion:** Agents generate outputs for their tasks.  
 5. **Aggregation:** Crew AI combines results from all agents into a final output.
 
-Crew AI Workflow Image:
+**Crew AI Workflow Image:**
+
+![App Screenshot](crewAI_workflow.png)
+
+---
+
+## 🏗️ Project Architecture
+The system consists of four main modules:
+1. **app.py** – Streamlit interface, triggers the Crew AI process.
+2. **crew_agents.py** – Defines the multi-agent team and their capabilities.
+3. **tasks.py** – Assigns tasks to agents and defines expected outputs.
+4. **local_llm.py** – Loads and runs the local LLM for generating insights.
+
+![App Screenshot](financial_trading_architecture.png)
+---
+
+## ⚙️ Installation
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/ritvika-talreja/multi-agent-financial-trading.git
+cd multi-agent-financial-trading
+```
+2. **Create a Virtual Environment and Activate it:**
+```bash 
+python -m venv .venv
+# Linux/Mac
+source .venv/bin/activate
+# Windows
+.venv\Scripts\activate
+```
+3. **Install Dependencies:**
+```bash
+pip install -r requirements.txt
+```
+4. **Update Model Path in app.py:**
+```bash
+MODEL_PATH = r"path\to\your\model.gguf"
+```   
+
+
 
 
